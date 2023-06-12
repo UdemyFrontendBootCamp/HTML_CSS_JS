@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 조사 결과 웅진 it는 시멘틱 태그를 사용하여서 작성, 웅진씽크빅은 일반 div 태그를 사용하여 작성 -->
+    <!-- 웅진 it는 시멘틱 태그를 사용한 만큼 어디부터 어디까지가 header 영역인지 구분할 수 있었으며 각 섹션별로 어떤 요소가 들어가 있는지 구분하기 쉬웠음. -->
+    <!-- 그에 비해 웅진 씽크빅은 시멘틱 태그가 아닌 개별 id를 사용해서 영역을 구분함. 그러나 id로 구분한 만큼 모든 div 태그를 일일히 구분해야 하는 불편함이 있었음 -->
+    <!-- 알아보기 편한 만큼 유지 보수가 쉬워짐 -->
+    <!-- 태그가 명확하게 작성 되어있기 때문에 서치 봇이 데이터를 파싱할 때 더 유리함 -->
+    <!-- div태그를 사용한 경우 다양한 브라우저 호환성이 좋아짐 -->
+    <!-- 접근성이 좋아짐 (스크린 리더와 같은 도구를 사용 했을 때 구분이 가능) -->
+    <header
+      style="margin-bottom: 150px; display: flex; justify-content: center"
+    >
+      <p><h1>웅진IT와 웅진씽크빅 비교</h1></p>
+    </header>
+    <main>
+      <table>
+        <tr>
+          <th>씨멘틱 태그</th>
+          <th>div 태그</th>
+        </tr>
+        <tr>
+          <td>웅진IT</td>
+          <td>웅진씽크빅</td>
+        </tr>
+      </table>
+      <span style="display: flex;">
+        <div>
+            <h3>씨멘틱 태그의 장점</h3>
+            <ol>
+                <li>가시성이 좋음</li>
+                <li>유지보수에 유리함</li>
+                <li>SEO 최적화에 유리함</li>
+                <li>
+                    스크린리더와 같은 도구를 사용하거나 Tab키로 이동하기에 훨씬 편해지는
+                    등의 접근성이 좋아진다.
+                </li>
+            </ol>
+        </div>
+        <div>
+            <h3>div 태그를 사용했을 때의 장점</h3>
+            <ol>
+                <li>레이아웃의 유연성</li>
+                <li>스타일링 용이</li>
+                <li>크로스 브라우저 호환성</li>
+            </ol>
+        </div>
+        </span>
+    </main>
+
+    <footer>8팀 All Copyrights reserved.</footer>
+  </body>
+</html>
