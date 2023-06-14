@@ -1,0 +1,60 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  display: table;
+  width: 80%;
+  table-layout: fixed;
+  margin: 20px 0 0 20px;
+}
+.navbar-item {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 12px;
+
+  /* position: relative; */
+}
+.h-2 {
+  height: 0.5rem;
+}
+.w-2 {
+  width: 0.5rem;
+}
+.rounded-fill {
+  border-radius: 9999px;
+}
+.absolute {
+  position: absolute;
+}
+
+.-top-1 {
+  top: -0.25rem;
+}
+.-right-1 {
+  right: 20.25rem;
+}
+.-top-2 {
+  top: -0.25rem;
+}
+.-right-2 {
+  right: 0.5rem;
+}
+
+
+.point::after {
+	content: "";
+	position: absolute;
+	display: inline-block;
+	top: -4px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+}
+
+.point.red::after {
+	background-color: red;
+}
+
+.point.blue::after {
+	background-color: blue;
+}
