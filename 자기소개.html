@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/자기소개.css" />
     <title>자기 소개</title>
   </head>
   <body>
     <header>
       <h1>나아가는 진</h1>
       <div style="display: flex">
-        <span>배포 된 사이트 주소입니다.</span>
-        <nav>
-          <ul style="display: flex">
-            <li style="margin-right: 100px">
-              <a href="https://drawee.art/">drawee</a>
-            </li>
-            <li style="margin-right: 100px">
-              <a href="http://bvote.co.kr/">바나나 보트 (개발 중)</a>
-            </li>
-            <li style="margin-right: 100px">
-              <a href="https://blog-sable-omega-55.vercel.app/"
-                >개인 기술 블로그 (개발 중)</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <span>배포 된 사이트 주소입니다.</span>
+          <nav>
+            <ul style="display: flex">
+              <li style="margin-right: 100px; list-style: none">
+                <a href="https://drawee.art/">drawee</a>
+              </li>
+              <li style="margin-right: 100px; list-style: none">
+                <a href="http://bvote.co.kr/">바나나 보트 (개발 중)</a>
+              </li>
+              <li style="margin-right: 100px; list-style: none">
+                <a href="https://blog-sable-omega-55.vercel.app/"
+                  >개인 기술 블로그 (개발 중)</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <section>
-      <div style="display: flex">
+      <div style="display: flex" id="info">
         <img src="./6-24 정진-.jpg" width="200px" alt="프로필 이미지" />
         <div>
           <div>이름: 정진</div>
@@ -44,10 +47,13 @@
     </section>
     <main>
       <div>
-        <h3>저는 함께 할 때 성장할 수 있다고 믿습니다.</h3>
-        <div>1️⃣ 다른 사람들과 소통하기를 좋아합니다.</div>
-        <div>2️⃣ 알게 된 것들을 나누기 좋아합니다.</div>
-        <div>3️⃣ 새로운 기술들을 함께 공부하고 사용해보길 원합니다.</div>
+        <div>
+          <h3>저는 함께 할 때 성장할 수 있다고 믿습니다.</h3>
+          <div>1️⃣ 다른 사람들과 소통하기를 좋아합니다.</div>
+          <div>2️⃣ 알게 된 것들을 나누기 좋아합니다.</div>
+          <div>3️⃣ 새로운 기술들을 함께 공부하고 사용해보길 원합니다.</div>
+        </div>
+        <div></div>
       </div>
       <div>
         <br />
@@ -79,15 +85,17 @@
             <li>저는 자는 것을 좋아합니다.</li>
             <li>저는 대화 하는 것을 좋아합니다.</li>
           </ol>
-          <dl>
-            <dt>
-              <h4>목표로 하는 회사</h4>
-            </dt>
-            <dd>저는 스타트 업 회사를 목표로 생각하고 있습니다.</dd>
-          </dl>
         </div>
       </div>
     </main>
+    <section>
+      <dl>
+        <dt>
+          <h4>목표로 하는 회사</h4>
+        </dt>
+        <dd>저는 스타트 업 회사를 목표로 생각하고 있습니다.</dd>
+      </dl>
+    </section>
 
     <footer><p>반갑습니다. 정진 All Copyrights reserved.</p></footer>
   </body>

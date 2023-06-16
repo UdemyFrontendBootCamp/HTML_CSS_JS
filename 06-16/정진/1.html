@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const onClick = () =>{
+            const number1 = parseInt(document.getElementById("number1").value);
+            const number2 = parseInt(document.getElementById("number2").value);
+            const result = document.getElementById("result");
+            
+            result.innerHTML=`<div>더하기 : ${number1 + number2} </div>
+                            <div>곱하기 : ${number1 * number2} </div>
+                            <div>빼기 : ${number1 - number2} </div>
+                            <div>나누기 : ${number1 / number2} </div>
+                            `
+        }
+    </script>
+</head>
+<body>
+    <input id = "number1"></input>
+    <input id = "number2"></input>
+    <button id = "cal" onclick="onClick()">계산</button>
+    <div id="result">
+
+    </div>
+</body>
+</html>

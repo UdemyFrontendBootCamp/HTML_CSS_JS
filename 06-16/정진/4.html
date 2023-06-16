@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #imgWrapper {
+        width: 1600px;
+        height: 400px;
+        display: flex;
+        transition: transform 0.3s ease-in-out;
+      }
+      img {
+        width: 400px;
+        height: 400px;
+      }
+      #slider {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+      <div id="imgWrapper">
+        <img src="./src/1.jpg" id="image" />
+        <img src="./src/2.jpg" id="image" />
+        <img src="./src/3.jpg" id="image" />
+        <img src="./src/4.jpg" id="image" />
+      </div>
+    </div>
+    <button id="prev">이전</button>
+    <button id="next">다음</button>
+    <script>
+      let currentIndex = 0;
+      const imageWrapper = document.getElementById("imgWrapper");
+      const prevButton = document.getElementById("prev");
+      const nextButton = document.getElementById("next");
+
+      const imageWidth = 400;
+      const slidePrev = () => {
+        currentIndex = (currentIndex - 1 + 4) % 4;
+        moveSlide();
+      };
+      const slideNext = () => {
+        currentIndex = (currentIndex + 1) % 4;
+        moveSlide();
+      };
+
+      const moveSlide = () => {
+        const newPosition = -currentIndex * imageWidth;
+        imageWrapper.style.transform = "translateX(" + newPosition + "px)";
+      };
+
+      prevButton.addEventListener("click", slidePrev);
+      nextButton.addEventListener("click", slideNext);
+    </script>
+  </body>
+</html>
