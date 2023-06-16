@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="imgWrapper">
+      <img src="./src/3.jpg" id="image" onclick="changeImage()" />
+    </div>
+    <script>
+      const imgs = [
+        "./src/1.jpg",
+        "./src/2.jpg",
+        "./src/3.jpg",
+        "./src/4.jpg",
+        "./src/5.jpg",
+        "./src/6.jpg",
+        "./src/7.jpg",
+      ];
+      const changeImage = () => {
+        const image = document.getElementById("image");
+        const index = Math.floor(Math.random() * imgs.length);
+        image.src = imgs[index];
+      };
+    </script>
+  </body>
+</html>
