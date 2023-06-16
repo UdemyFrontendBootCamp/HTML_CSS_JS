@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #img {
+     width: 400px;
+     height: 400px;
+   }
+ </style>
+</head>
+<body>
+  <p><img id='img' src="./images/김유정.png" alt='이미지들'></p>
+  <button onclick='before()'>이전</button>
+  <button onclick='after()'>다음</button>
+</body>
+<script>
+    const images = [
+    './images/김유정.png',
+    './images/김지은.png',
+    './images/박보영.png',
+    './images/신혜선.png',
+    './images/아이유.png',
+    './images/이성경.png',
+    './images/한소희.png',
+    './images/한지민.png',
+  ]
+  let img = document.getElementById("img");
+  let currentIndex = 0;
+  function before() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = images.length - 1;
+    }
+    img.src = images[currentIndex];
+  }
+
+  function after() {
+    if (currentIndex > images.length - 1) {
+      currentIndex = 0;
+    } else {
+      currentIndex++;
+    }
+    img.src = images[currentIndex];
+  }
+</script>
+</html>
